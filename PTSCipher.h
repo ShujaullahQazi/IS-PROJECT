@@ -15,4 +15,8 @@ public:
     void inverseSubstitute(std::string& text, Key key);
 
 
+    void encrypt(std::string& text, Key key);
+    void decrypt(std::string& text, Key key);
+
+
 };

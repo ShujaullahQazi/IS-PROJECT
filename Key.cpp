@@ -81,6 +81,10 @@ uint16_t Key::operator[](uint8_t index)
 
 void Key::operator++(int)
 {
-
+    for (int i = 0; i < this->key.size(); ++i) {
+        if (++this->key[i] != 0) {
+            break;  // Stop if carry-over is not needed
+        }
+    }
 }
 

@@ -19,5 +19,4 @@ public:
     Key getKeyInverse();
     uint16_t operator[](uint8_t index);
     void operator++(int);
-
 };
