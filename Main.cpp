@@ -32,7 +32,7 @@ int main() {
     std::string text = "A quick brown x";
     std::cout << text.length() << '\n';
     
-    cipher.pad(text);
+    cipher.pad(text,key);
 
     std::cout << "\nAfter padding: \n";
     std::cout << text << '\n';
